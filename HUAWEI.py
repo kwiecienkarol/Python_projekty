@@ -7,6 +7,7 @@ from openpyxl import load_workbook
 
 t=dt.datetime.today().strftime("%d.%m.%Y")
 
+#1111
 
 # otwieranie GUI "grafic user interface"
 root =tkinter.Tk()
@@ -385,7 +386,6 @@ UPD.info(memory_usage='deep')
 
 
 
-
 #----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 # # *************************   TAR   ***************************************************************************************************************************************************************************************
 
@@ -424,7 +424,6 @@ TAR['Channel Price']=TAR['Channel Price'].astype('float64')
 
 #zapisywanie do excela
 TAR.to_excel(path+"/HUAWEI-A86227-TAR-"+t+"-SKU.xlsx",sheet_name='TAR', startrow=1)
-# print(df1.columns)
 
 wbook=load_workbook(path+"/HUAWEI-A86227-TAR-"+t+"-SKU.xlsx")
 sheet=wbook.active
